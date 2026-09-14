@@ -6,8 +6,6 @@ const PORT = process.env.PORT || 3000;
 
 // Serve all files from the main folder
 app.use(express.static(__dirname));
-// Serve images
-app.use("/img", express.static(path.join(__dirname, "img")));
 
 app.get("/", (req, res) => {
 
